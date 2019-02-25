@@ -1,21 +1,32 @@
 export const paymentMethods = [
     {
-        id: 1,
-        name: 'Al contado'
+        "codigo": "CC",
+        "descripcion": "Debito automatico",
+        "tarjeta": {
+            "numeroTarjeta": "1111",
+            "operador": "VISA"
+        }
     },
     {
-        id: 2,
-        name: 'Debito automatico',
-        creditCard: 'Visa',
-        creditCardLastNumbers: 1234,
+        "codigo": "CC",
+        "descripcion": "Debito automatico",
+        "cuenta": {
+            "numeroCuenta": "12345",
+            "tipoCuenta": "CAH",
+            "entidadBancaria": "Banco BBVA"
+        }
     },
     {
-        id: 3,
-        name: 'Debito automatico',
-        account: '6789'
+        "codigo": "LQ",
+        "descripcion": "Al contado"
     },
     {
-        id: 4,
-        name: 'Cuponera'
+        "codigo": "CP",
+        "descripcion": "Cuponera"
+    },
+    {
+        "codigo": "LT",
+        "descripcion": "Letras"
     }
 ];
+

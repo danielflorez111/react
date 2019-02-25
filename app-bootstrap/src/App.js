@@ -15,8 +15,8 @@ class App extends Component {
 
   componentDidMount() {
     setTimeout(() => {
-      const n = this.getRandomInt(4);
-      const paymentMethod = paymentMethods[n];
+      // const n = this.getRandomInt(5);
+      const paymentMethod = paymentMethods[4];
       this.setState({ paymentMethod })
     }, 1000);
   }
