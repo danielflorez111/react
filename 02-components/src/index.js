@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import faker from "faker";
 import CommentDetail from './CommentDetail';
 import ApprovalCard from './ApprovalCard';
+import Tooltip from './Tooltip';
 
 const App = () => {
     return (
         <div className="ui container comments">
+
+            <p>Here is a <Tooltip message={'Hello, I am a super cool tooltip'} position={'bottom'}>tooltip</Tooltip> on bottom.</p>
+
+            <Tooltip message={'Hello, I am a super cool tooltip'} position={'bottom'}>
+                <img alt="question" src="/src/icons/question.svg" />
+            </Tooltip>
 
             <ApprovalCard>
                 <CommentDetail
