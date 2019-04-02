@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import CurrentPayment from './components/CurrentPayment';
 import PaymentMethod from './components/PaymentMethod';
+import ServerPagination from './components/ServerPagination';
 import { paymentMethods } from './mockData'
 import './App.css';
 
@@ -27,15 +28,22 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <div className="col-sm-8">
-            <CurrentPayment />
-          </div>
-          <div className="col-sm-4">
-            <PaymentMethod paymentMethod={this.state.paymentMethod} />
-          </div>
-        </div>
+      // <div className="container">
+      //   <div className="row">
+      //     <div className="col-sm-8">
+      //       <CurrentPayment />
+      //     </div>
+      //     <div className="col-sm-4">
+      //       <PaymentMethod paymentMethod={this.state.paymentMethod} />
+      //     </div>
+      //   </div>
+      // </div>
+      <div>
+        <ServerPagination
+          currentPage={1}
+          rows={10}
+          pageSize={4}
+        />
       </div>
     );
   }
