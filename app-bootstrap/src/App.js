@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
-// import CurrentPayment from './components/CurrentPayment';
-// import PaymentMethod from './components/PaymentMethod';
-import CustomSelect from './components/CustomSelect';
+import CurrentPayment from './components/CurrentPayment';
+import PaymentMethod from './components/PaymentMethod';
+import ServerPagination from './components/ServerPagination';
 import { paymentMethods } from './mockData'
 import './App.css';
 
@@ -28,30 +28,22 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
-
-        <h3>Select</h3>
-
-        {/* <div style={{ margin: '16px', position: 'relative' }}> */}
-          <CustomSelect
-            width={300}
-            items={[
-              { value: 'United States', id: 1 },
-              { value: 'Mexico', id: 2 },
-              { value: 'Canada', id: 3 },
-              { value: 'Colombia', id: 4 },
-            ]}
-          />
-        {/* </div> */}
-
-        {/* <div className="row">
-          <div className="col-sm-8">
-            <CurrentPayment />
-          </div>
-          <div className="col-sm-4">
-            <PaymentMethod paymentMethod={this.state.paymentMethod} />
-          </div>
-        </div> */}
+      // <div className="container">
+      //   <div className="row">
+      //     <div className="col-sm-8">
+      //       <CurrentPayment />
+      //     </div>
+      //     <div className="col-sm-4">
+      //       <PaymentMethod paymentMethod={this.state.paymentMethod} />
+      //     </div>
+      //   </div>
+      // </div>
+      <div>
+        <ServerPagination
+          currentPage={1}
+          rows={10}
+          pageSize={4}
+        />
       </div>
     );
   }
