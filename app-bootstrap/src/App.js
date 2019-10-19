@@ -5,6 +5,11 @@ import ServerPagination from './components/ServerPagination';
 import { paymentMethods } from './mockData'
 import './App.css';
 
+import Slider, { createSliderWithTooltip } from 'rc-slider';
+import 'rc-slider/assets/index.css';
+
+const SliderWithTooltip = createSliderWithTooltip(Slider);
+
 class App extends Component {
 
   constructor(props) {
@@ -38,11 +43,34 @@ class App extends Component {
       //     </div>
       //   </div>
       // </div>
+
+      // <div>
+      //   <ServerPagination
+      //     currentPage={1}
+      //     rows={10}
+      //     pageSize={4}
+      //   />
+      // </div>
+
       <div>
-        <ServerPagination
-          currentPage={1}
-          rows={10}
-          pageSize={4}
+        <Slider />
+        
+
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+        <br></br>
+
+        <SliderWithTooltip
+          min={1}
+          max={9}
+          // marks={marks}
+          // disabled={this.props.disabled}
+          step={1}
+          // onChange={this.updateMixValue.bind(this)}
+          // value={this.props.value}
+          // onAfterChange={value => this.props.MixValue(getValues(value))}
         />
       </div>
     );
