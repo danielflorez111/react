@@ -11,18 +11,12 @@
       "id": 2
     },
     {
-      "title": "Stream 4",
-      "description": "Test userId",
-      "userId": "112385315792482402191",
-      "id": 3
-    },
-    {
       "title": "Music all day",
       "description": "All day",
       "id": 4
     },
     {
-      "title": "Music",
+      "title": "Music!",
       "description": "All day",
       "userId": "112385315792482402191",
       "id": 5
@@ -32,18 +26,6 @@
       "description": "Stream test",
       "userId": "112385315792482402191",
       "id": 6
-    },
-    {
-      "title": "Testing refactor",
-      "description": "Testing refactor",
-      "userId": "112385315792482402191",
-      "id": 7
-    },
-    {
-      "title": "Testing  patch",
-      "description": "Testing  patch",
-      "userId": "112385315792482402191",
-      "id": 8
     },
     {
       "title": "Coding stream!",
